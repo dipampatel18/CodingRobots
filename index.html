@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Coding Robots</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- CodeMirror CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css">
+    <!-- Pyodide -->
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.25.1/full/pyodide.js"></script>
+    <!-- Three JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    </head>
+
+    <body>
+    <div id="container">
+        <!-- Left Panel: IDE -->
+        <div id="editor-section">
+            <div id="editor" style="font-size: 20px;"></div>
+            <div id="horizontal-divider"></div>
+            <div id="console">
+                <div id="console-header">
+                    <span style="font-size: 20px; font-weight: bold;">Output</span>
+                    <div>
+                        <button id="run-button">Run&ensp;&#9654;</button>
+                        <button id="stop-button">Stop&ensp;&#x2B1C;</button>
+                        <button id="clear-console">Clear 🗑️</button>
+                    </div>
+                </div>                  
+                <div id="console-body"></div>
+            </div>
+        </div>
+
+        <div id="panel-divider"></div>
+
+        <!-- Right Panel: Simulation -->
+        <div id="simulator-section">
+            <canvas id="simulator"></canvas>
+        </div>
+    </div>
+
+    <!-- JS Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/python/python.min.js"></script>
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+    <!-- Your main JS -->
+    <script src="main.js"></script>
+
+    </body>
+</html>
